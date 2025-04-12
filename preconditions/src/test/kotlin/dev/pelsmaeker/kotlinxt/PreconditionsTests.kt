@@ -2,6 +2,7 @@ package dev.pelsmaeker.kotlinxt
 
 import io.kotest.core.spec.style.FunSpec
 import io.kotest.matchers.shouldBe
+import net.pelsmaeker.kotlinxt.assumeNotNull
 
 class PreconditionsTests: FunSpec({
 

@@ -22,7 +22,7 @@ subprojects {
 
     val gitVersion: groovy.lang.Closure<String> by extra
 
-    group = "dev.pelsmaeker"
+    group = "net.pelsmaeker.kotlinxt"
     version = gitVersion()
     description = "Cast to a generic type that might be nullable."
 
@@ -52,13 +52,13 @@ subprojects {
                 pom {
                     name.set("Kotlin Generic Cast")
                     description.set(project.description)
-                    url.set("https://github.com/Virtlink/kotlin-generic-cast")
+                    url.set("https://github.com/Virtlink/kotlinxt")
                     inceptionYear.set("2023")
                     licenses {
                         // From: https://spdx.org/licenses/
                         license {
-                            name.set("CC0-1.0")
-                            url.set("https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt")
+                            name.set("Apache-2.0")
+                            url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
                             distribution.set("repo")
                         }
                     }
@@ -70,9 +70,9 @@ subprojects {
                         }
                     }
                     scm {
-                        connection.set("scm:git@github.com:Virtlink/kotlin-generic-cast.git")
-                        developerConnection.set("scm:git@github.com:Virtlink/kotlin-generic-cast.git")
-                        url.set("scm:git@github.com:Virtlink/kotlin-generic-cast.git")
+                        connection.set("scm:git@github.com:Virtlink/kotlinxt.git")
+                        developerConnection.set("scm:git@github.com:Virtlink/kotlinxt.git")
+                        url.set("scm:git@github.com:Virtlink/kotlinxt.git")
                     }
                 }
             }

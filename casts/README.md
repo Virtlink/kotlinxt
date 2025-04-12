@@ -7,7 +7,7 @@ Replace a cast `as T` by the `Cast.asGeneric<T>()` function from this library.  
 
 ```kotlin
 dependencies {
-    implementation("dev.pelsmaeker.kotlinxt:cast:1.0.0")
+    implementation("net.pelsmaeker.kotlinxt:cast:1.0.0")
 }
 ```
 

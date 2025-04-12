@@ -1,4 +1,4 @@
-package dev.pelsmaeker.kotlinxt;
+package net.pelsmaeker.kotlinxt;
 
 import javax.annotation.Nullable;
 import java.util.Map;

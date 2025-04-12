@@ -48,6 +48,6 @@ Thanks! :heart: :heart: :heart:
 
 Daniel
 
-[1]: https://github.com/Virtlink/kotlin-generic-cast/discussions
-[2]: https://github.com/Virtlink/kotlin-generic-cast/issues
+[1]: https://github.com/Virtlink/kotlinxt/discussions
+[2]: https://github.com/Virtlink/kotlinxt/issues
 [3]: https://stackoverflow.com/

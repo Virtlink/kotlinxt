@@ -1,4 +1,4 @@
-package dev.pelsmaeker.kotlinxt
+package net.pelsmaeker.kotlinxt
 
 import kotlin.contracts.ExperimentalContracts
 import kotlin.contracts.contract

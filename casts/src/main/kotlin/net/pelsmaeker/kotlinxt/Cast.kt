@@ -1,4 +1,4 @@
-package dev.pelsmaeker.kotlinxt
+package net.pelsmaeker.kotlinxt
 
 /**
  * Helper function for Kotlin that converts an explicitly nullable value `T?` into one that is only null
