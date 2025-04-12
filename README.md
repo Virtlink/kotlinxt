@@ -1,7 +1,6 @@
 # Kotlin XT
 [![Build][github-build-badge]][github-build]
 [![License][license-badge]][license]
-[![Maven Release][maven-release-badge]][maven-release]
 [![GitHub Release][github-release-badge]][github-release]
 
 Extensions to Kotlin's already extensive standard library.
