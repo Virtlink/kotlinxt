@@ -22,8 +22,6 @@ jobs:
         gradle:
           - version: '7.6.4'      # Latest stable 7
             command: 'gradle'
-          - version: 'current'    # Latest stable
-            command: 'gradle'
           - version: 'wrapper'
             command: './gradlew'  # Workaround for issue https://github.com/gradle/actions/issues/273
     runs-on: ${{ matrix.os }}
