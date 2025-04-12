@@ -1,0 +1,21 @@
+[versions]
+# Plugins
+kotlin                          = "2.1.20"          # https://kotlinlang.org/
+gitVersion                      = "3.2.0"           # https://github.com/palantir/gradle-git-version
+nexuspublish                    = "2.0.0"           # https://github.com/gradle-nexus/publish-plugin/
+
+# Testing
+kotest                          = "5.9.1"           # https://kotest.io/ (https://github.com/kotest/kotest)
+
+
+[plugins]
+kotlin-jvm                      = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
+gitVersion                      = { id = "com.palantir.git-version",                                        version.ref = "gitVersion" }
+nexuspublish                    = { id = "io.github.gradle-nexus.publish-plugin",                           version.ref = "nexuspublish" }
+
+
+[libraries]
+# Testing
+kotest                          = { module = "io.kotest:kotest-runner-junit5",                              version.ref = "kotest" }
+kotest-assertions               = { module = "io.kotest:kotest-assertions-core",                            version.ref = "kotest" }
+kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
