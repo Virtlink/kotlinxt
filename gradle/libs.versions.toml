@@ -1,21 +1,26 @@
 [versions]
 # Plugins
-kotlin                          = "2.1.20"          # https://kotlinlang.org/
-gitVersion                      = "3.2.0"           # https://github.com/palantir/gradle-git-version
-nexuspublish                    = "2.0.0"           # https://github.com/gradle-nexus/publish-plugin/
-
+kotlin                          = "2.1.20"                  # https://kotlinlang.org/
+gitVersion                      = "3.2.0"                   # https://github.com/palantir/gradle-git-version
+nexuspublish                    = "2.0.0"                   # https://github.com/gradle-nexus/publish-plugin/
+# Annotations & Annotation Processors
+jsr305                          = "3.0.2"                   # https://github.com/findbugsproject/findbugs
 # Testing
-kotest                          = "5.9.1"           # https://kotest.io/ (https://github.com/kotest/kotest)
+kotest                          = "5.9.1"                   # https://kotest.io/ (https://github.com/kotest/kotest)
 
 
 [plugins]
-kotlin-jvm                      = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
-gitVersion                      = { id = "com.palantir.git-version",                                        version.ref = "gitVersion" }
-nexuspublish                    = { id = "io.github.gradle-nexus.publish-plugin",                           version.ref = "nexuspublish" }
+kotlin-jvm                                  = { id = "org.jetbrains.kotlin.jvm",                                        version.ref = "kotlin" }
+gitVersion                                  = { id = "com.palantir.git-version",                                        version.ref = "gitVersion" }
+nexuspublish                                = { id = "io.github.gradle-nexus.publish-plugin",                           version.ref = "nexuspublish" }
 
 
 [libraries]
+# Annotations & Annotation Processing
+jsr305                                      = { module = "com.google.code.findbugs:jsr305",                             version.ref = "jsr305" }
+
 # Testing
-kotest                          = { module = "io.kotest:kotest-runner-junit5",                              version.ref = "kotest" }
-kotest-assertions               = { module = "io.kotest:kotest-assertions-core",                            version.ref = "kotest" }
-kotest-property                 = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
+kotest                                      = { module = "io.kotest:kotest-runner-junit5",                              version.ref = "kotest" }
+kotest-assertions                           = { module = "io.kotest:kotest-assertions-core",                            version.ref = "kotest" }
+kotest-datatest                             = { module = "io.kotest:kotest-framework-datatest",                         version.ref = "kotest" }
+kotest-property                             = { module = "io.kotest:kotest-property",                                   version.ref = "kotest" }
