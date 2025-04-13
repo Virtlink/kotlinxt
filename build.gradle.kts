@@ -8,6 +8,18 @@ plugins {
 }
 
 allprojects {
+    apply(plugin = "com.palantir.git-version")
+
+    val gitVersion: groovy.lang.Closure<String> by extra
+
+    group = "net.pelsmaeker.kotlinxt"
+    version = gitVersion()
+    description = "Cast to a generic type that might be nullable."
+
+    extra["isSnapshotVersion"] = version.toString().endsWith("-SNAPSHOT")
+    extra["isDirtyVersion"] = version.toString().endsWith(".dirty")
+    extra["isCI"] = !System.getenv("CI").isNullOrEmpty()
+
     repositories {
         mavenCentral()
     }
