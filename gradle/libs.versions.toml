@@ -1,12 +1,12 @@
 [versions]
 # Plugins
 kotlin                          = "2.1.20"                  # https://kotlinlang.org/
-gitVersion                      = "3.2.0"                   # https://github.com/palantir/gradle-git-version
+gitVersion                      = "5.1.0"                   # https://github.com/palantir/gradle-git-version
 nexuspublish                    = "2.0.0"                   # https://github.com/gradle-nexus/publish-plugin/
 # Annotations & Annotation Processors
 jsr305                          = "3.0.2"                   # https://github.com/findbugsproject/findbugs
 # Testing
-kotest                          = "5.9.1"                   # https://kotest.io/ (https://github.com/kotest/kotest)
+kotest                          = "6.2.6"                   # https://kotest.io/ (https://github.com/kotest/kotest)
 
 
 [plugins]
